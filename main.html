@@ -1,40 +1,109 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Adoption Application</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<form action="/action_page.php">
-		<label for="name">Name</label>
-		<input id ="name" type ="text" name="name" placeholder ="name">
-		<br>
-		<label for="phone">Phone Number</label>
-		<input id ="phone" type ="text" name ="phone" placeholder ="Phone Number">
-		<br>
-		<label for="address">Address</label>
-		<input id ="address" type ="text" name ="address"placeholder ="Address">
-		<br>
-		<label for="checkbox">Have you ever lived with a Dog before?</label>
-		<input id ="checkbox" name="lived_with_dog"  type ="checkbox" >
-		<br>
-		<label for="multiSelect">Please select your preferred breeds</label>
-		<select>
-			<option>German Shephard</option>
-			<option>tommy</option>
-			<option>pitbull</option>
-		</select>
-		<br>
-		
-		<button id ="submit" type ="submit">Submit</button>
-		
-	</form>
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <!-- Form Container -->
+    <div>
+        
+        <!-- Header -->
+        <div>
+            <h1>Dog Adoption Application</h1>
+            <p>Find your new best friend today!</p>
+        </div>
+
+        <!-- Adoption Form -->
+        <form action="#" method="POST">
+            
+            <!-- Name Field -->
+            <div>
+                <label for="name">Full Name</label>
+                <br>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    placeholder="Name" 
+                    required
+                >
+            </div>
+            <br>
+
+            <!-- Phone Number Field -->
+            <div>
+                <label for="phone">Phone Number</label>
+                <br>
+                <input 
+                    type="text" 
+                    id="phone" 
+                    name="phone" 
+                    placeholder="Phone Number" 
+                    required
+                >
+            </div>
+            <br>
+
+            <!-- Address Field -->
+            <div>
+                <label for="address">Address</label>
+                <br>
+                <input 
+                    type="text" 
+                    id="address" 
+                    name="address" 
+                    placeholder="Address" 
+                    required
+                >
+            </div>
+            <br>
+
+            <!-- Lived with Dog Checkbox -->
+            <div>
+                <input 
+                    id="checkbox" 
+                    name="lived_with_dog" 
+                    type="checkbox" 
+                    value="Have you ever lived with a Dog before?"
+                >
+                <label for="checkbox">Have you ever lived with a dog before?</label>
+            </div>
+            <br>
+
+            <!-- Preferred Breeds Multi-Select -->
+            <div>
+                <label for="multiSelect">Please select your preferred breeds</label>
+                <br>
+                <select 
+                    id="multiSelect" 
+                    name="preferred_breeds" 
+                    multiple 
+                    required
+                >
+                    <option>Golden Retriever</option>
+                    <option>Labrador Retriever</option>
+                    <option>German Shepherd</option>
+                    <option>Beagle</option>
+                    <option>Poodle</option>
+                    <option>Other</option>
+                </select>
+                <p><small>Hold down Ctrl (or Cmd on Mac) to select multiple options.</small></p>
+            </div>
+            <br>
+
+            <!-- Submit Button -->
+            <div>
+                <input 
+                    type="submit" 
+                    id="submit" 
+                    value="Submit"
+                >
+            </div>
+        </form>
+    </div>
 
 </body>
-
 </html>
